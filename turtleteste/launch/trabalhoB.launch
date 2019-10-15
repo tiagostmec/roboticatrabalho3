@@ -1,0 +1,11 @@
+<launch>
+	<arg name="nome" default="marcato"/>
+	<arg name="x" default="2"/>
+	<arg name="y" default="2"/>
+	<node 
+		pkg="rosservice"
+		type="rosservice"
+		name="nascimento"
+		args="call /spawn $(arg x) $(arg y) 0 $(arg nome)" >
+	</node> 
+</launch>

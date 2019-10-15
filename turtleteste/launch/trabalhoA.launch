@@ -1,0 +1,14 @@
+<launch>
+	<node 	pkg="turtlesim"
+		type="turtlesim_node"
+		name="simulador" >
+	</node>
+	
+	<node
+		pkg="rosservice"
+		type="rosservice"
+		name="servissim"
+		args="call /kill turtle1">
+	</node>
+	
+</launch>
